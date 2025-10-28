@@ -1,0 +1,8 @@
+*.txt
+*.pdf
+correcao.sh
+*.Identifier
+*.o
+configuracoes
+prog
+*.h
