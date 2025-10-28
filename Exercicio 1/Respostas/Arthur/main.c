@@ -8,7 +8,7 @@ int main(){
     tRestaurante restaurante = leRestaurante();
 
     do {
-        scanf("%c", &comando);
+        scanf("%c\n", &comando);
 
         if (comando == 'A'){
             tAlimento alimento = leAlimento();

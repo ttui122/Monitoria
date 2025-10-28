@@ -15,7 +15,7 @@ tAlimento criaAlimento(char *nome, float preco, float qtd){
 
 tAlimento leAlimento(){
     char nome[32];
-    float preco, qtdDisponivel;
+    float preco = 0.0, qtdDisponivel = 0.0;
 
     scanf(" %[^\n]", nome);
     scanf("%f", &preco);

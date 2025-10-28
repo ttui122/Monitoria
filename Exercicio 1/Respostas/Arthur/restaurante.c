@@ -3,7 +3,7 @@
 #include "restaurante.h"
 
 tRestaurante criaRestaurante(char *nome){
-    tRestaurante restaurante;
+    tRestaurante restaurante = {0};
 
     strcpy(restaurante.nome, nome);
     restaurante.numeroAlimentos = 0;
@@ -13,7 +13,6 @@ tRestaurante criaRestaurante(char *nome){
 
 tRestaurante leRestaurante(){
     char nome[32];
-    char linha[32];
     
     scanf(" %[^\n]", nome);
 
@@ -66,7 +65,7 @@ float rendaTotal(tRestaurante r){
 
  void imprimeRestaurante(tRestaurante r){
     
-    printf("Nome: %s", r.nome);
+    printf("Nome: %s\n", r.nome);
     printf("Alimentos:\n");
     
     for (int i = 0; i < r.numeroAlimentos; i++){
